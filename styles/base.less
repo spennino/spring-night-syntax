@@ -59,10 +59,10 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @purple;
+  color: @sky-blue;
 
   &.syntax--control {
-    color: @purple;
+    color: @sky-blue;
   }
 
   &.syntax--operator {
@@ -70,27 +70,27 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @red;
+    color: @purple;
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @red;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @sky-blue;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @red;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @red;
   }
 
   &.syntax--other.syntax--color {
@@ -103,10 +103,10 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @sky-blue;
+  color: @orange;
 
   &.syntax--interpolation {
-    color: darken(@sky-blue, 10%);
+    color: darken(@orange, 10%);
   }
 
   &.syntax--parameter.syntax--function {
@@ -115,7 +115,7 @@ atom-text-editor {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @sky-blue;
+  background-color: @orange;
   color: @syntax-background-color;
 }
 
@@ -127,12 +127,12 @@ atom-text-editor {
     color: @cyan;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @red;
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @sky-blue;
+    color: @orange;
   }
 }
 
@@ -151,46 +151,46 @@ atom-text-editor {
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @red;
+      color: @purple;
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @red;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @sky-blue;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@sky-blue, 10%);
+    color: darken(@orange, 10%);
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @red;
   }
 
   &.syntax--function  {
     color: @cyan;
 
     &.syntax--any-method {
-      color: @red;
+      color: @purple;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @red;
+    color: @purple;
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @red;
     text-decoration: underline;
   }
 
@@ -198,42 +198,42 @@ atom-text-editor {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
-  }
-
-  &.syntax--name.syntax--section {
     color: @red;
   }
 
+  &.syntax--name.syntax--section {
+    color: @purple;
+  }
+
   &.syntax--name.syntax--tag {
-    color: @sky-blue;
+    color: @orange;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @red;
 
     &.syntax--id {
-      color: @red;
+      color: @purple;
     }
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
-  }
-
-  &.syntax--link {
-    color: @orange;
-  }
-
-  &.syntax--require {
     color: @red;
   }
 
-  &.syntax--selector {
+  &.syntax--link {
+    color: @red;
+  }
+
+  &.syntax--require {
     color: @purple;
+  }
+
+  &.syntax--selector {
+    color: @sky-blue;
   }
 
   &.syntax--separator {
@@ -248,25 +248,25 @@ atom-text-editor {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @red;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @purple;
-  }
-
-  &.syntax--deleted {
     color: @sky-blue;
   }
 
+  &.syntax--deleted {
+    color: @orange;
+  }
+
   &.syntax--italic {
-    color: @purple;
+    color: @sky-blue;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @red;
+    color: @purple;
   }
 
   &.syntax--inserted {
@@ -274,11 +274,11 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @sky-blue;
+    color: @orange;
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @red;
   }
 
   &.syntax--raw.syntax--inline {
